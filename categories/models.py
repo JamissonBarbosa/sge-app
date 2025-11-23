@@ -1,7 +1,6 @@
 from django.db import models
 
-
-class Brand(models.Model):
+class Category(models.Model):
     name = models.CharField(max_length=500)
     description = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
